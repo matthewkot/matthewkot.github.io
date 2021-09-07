@@ -1,2 +1,2 @@
 # matthewkot.github.io
-matthewkot.github.io
+permalink: /index.html
