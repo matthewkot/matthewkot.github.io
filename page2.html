@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>second page</title>
+  <style>
+      body{
+          margin: auto;
+          display:flexbox;
+          background-color: aliceblue;
+      }
+      header{
+        width: 100%;
+        display: center; 
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+        text-align: center;
+        background-color: lightblue;
+        outline: 2px solid #000; /* Чёрная рамка */
+        /* /* border: 3px solid #fff; Белая рамка */
+        border-radius: 10px; /* Радиус скругления */
+      }
+      main {
+        display:flex;
+        /* text-align: center; */
+        flex-direction: column;
+        align-items: center;
+        /* padding: 12%; */
+        margin: 20px;
+      }
+      footer{
+        display:table-row;
+        /* margin-top: 15%; */
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+          }
+      .vidos1{
+          padding: 3%;
+      }
+      .vidos2{
+          padding: 3%;
+      }
+      .vidos3{
+          padding: 3%;
+      }
+      .vidos4{
+          padding: 3%;
+          /* margin-bottom: 10%; */
+      }
+     
+  </style>
+ </head>
+ <body>
+    <header>
+        <h1>
+            Видео со Шлёпой
+        </h1>
+    </header>
+    <main>
+        <div class="vidos1">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PDXI4mvl0Zg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+        <div class="vidos2">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YkUhM63oFiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+        <div class="vidos3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/5OmX1HxbfrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>    
+        <div class="vidos4">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/47eZkuGHmqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <footer>
+            Спасибо.
+        </footer>
+    </main>
+ </body>
+</html>
