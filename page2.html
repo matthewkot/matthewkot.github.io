@@ -22,6 +22,7 @@
         outline: 2px solid #000; /* Чёрная рамка */
         /* /* border: 3px solid #fff; Белая рамка */
         border-radius: 10px; /* Радиус скругления */
+        
       }
       main {
         display:flex;
@@ -32,7 +33,7 @@
         margin: 20px;
       }
       footer{
-        display:table-row;
+        display:flexbox;
         /* margin-top: 15%; */
         text-align: center;
         width: 100%;
@@ -49,9 +50,23 @@
       }
       .vidos4{
           padding: 3%;
-          /* margin-bottom: 10%; */
       }
      
+
+      @media (max-width: 930px) { /* это будет показано при разрешении монитора до 930 пикселей */
+        .content-wrapper {padding: 0;} /* основное содержимое занимает всё пространство окна */
+      }
+
+      @media (max-width: 930px) and (min-width: 470px) {  /* для разрешения экрана от 470 до 930 пикселей */
+        aside {position: static; width: 100%; background: #ccc;} /* боковая колонка смещается согласно расположению в HTML и меняет фон */
+      }
+
+      @media (max-width: 469px) { /* если максимальное разрешение экрана составит 469 пикселей */
+        body {font: .9em/1em "Helvetica Neue",Arial,Helvetica,sans-serif;} /* меняется шрифт */
+        aside {display: none;} /* боковая колонка исчезает */
+      }
+
+
   </style>
  </head>
  <body>
@@ -73,9 +88,12 @@
         <div class="vidos4">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/47eZkuGHmqU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <footer>
+        <!-- <footer>
             Спасибо.
-        </footer>
+        </footer> -->
     </main>
- </body>
+    <footer>
+        Спасибо.
+    </footer>
+</body>
 </html>
